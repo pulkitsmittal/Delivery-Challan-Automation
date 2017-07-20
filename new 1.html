@@ -1,0 +1,108 @@
+%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Transporter Details </title>
+<style>
+body
+{
+background: #f4dfc2;
+}
+p{
+text-align:center;
+font-size:125%;
+color: white;
+background: #c00000;
+}
+.q{
+width=100%;
+}
+.left{
+background: blue;
+width: 25%;
+}
+.middleleft{
+
+background: red;
+}
+.middleright{
+
+background: green;
+}
+.right{
+background: lightblue;
+}
+.leftdown{
+overflow: auto;
+position: fixed;
+border-style: solid;
+border-width: 2px;
+background: yellow;
+margin-left:20%;
+}
+.rightdown{
+margin-top: 0px;
+margin-left:52%;
+overflow: auto;
+border-style: solid;
+border-width: 2px;
+background: green
+position:fixed;
+}
+.up{
+margin-top: -35px;
+}
+</style>
+<body>
+<table>
+<tr>
+<p>Transporter Details </p>
+</tr>
+<tr>
+<div class="q">
+<td>
+<div class="left">
+</div>
+</td>
+<td>
+<div class="middleleft">
+</div>
+</td>
+<td>
+<div class="middleright">
+</div>
+</td>
+<td>
+<div class="right">
+</div>
+</td>
+</div>
+</tr>
+<tr>
+<div class="q">
+<td>
+<div class="leftdown">
+<p style="text-align:left; margin-top:-3px;">Location*</p><br>
+<div class="up">
+<input type="checkbox" name="location1" value="dhule" required>Dhule</input>
+</div>
+</div>
+</td>
+<td>
+<div class="rightdown">
+<p style="text-align:left; margin-top:-3px;">Jobs*</p><br>
+<div class="up">
+<input type="checkbox" name="job1" value="transhipment">Transhipment</input><br>
+<input type="checkbox" name="job2" value="depot_dispatch">Depot Dispatch</input><br>
+<input type="checkbox" name="job3" value="material_movement">Material Movement</input><br>
+<input type="checkbox" name="job4" value="pipeline_order">Pipeline Orders</input>
+</div>
+</td>
+</div>
+</div>
+</tr>
+</table>
+</body>
+</html>

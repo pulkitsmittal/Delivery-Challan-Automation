@@ -1,0 +1,144 @@
+%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Transporter Details </title>
+<style>
+body
+{
+background: #f4dfc2;
+}
+p{
+text-align:center;
+font-size:125%;
+color: white;
+background: #c00000;
+}
+.q{
+width=100%;
+background:yellow;
+}
+.left{ 
+position: fixed;
+width:20%;
+overflow: auto;
+height: 250px;
+background: blue;
+}
+.middleleft{
+height: 250px;
+margin-left:31%;
+width: 20%;
+overflow: auto;
+position: fixed;
+background: red;
+}
+.middleright{
+height: 250px;
+margin-left: 55%;
+position: fixed;
+overflow: auto;
+background: green;
+}
+.right{
+height: 250px;
+margin-left:70%;
+position:fixed;
+overflow: auto;
+background: lightblue;
+}
+.leftdown{
+overflow: auto;
+position: fixed;
+border-style: solid;
+border-width: 2px;
+background: yellow;
+margin-left:20%;
+}
+.rightdown{
+margin-top: 0px;
+margin-left:52%;
+overflow: auto;
+border-style: solid;
+border-width: 2px;
+background: green
+position:fixed;
+}
+.up{
+margin-top: -35px;
+}
+</style>
+<body>
+<table>
+<tr>
+<p>Transporter Details </p>
+</tr>
+<tr>
+<div class="q">
+<td>
+<div class="left">
+Depot Name*<br>
+<br>Transporter Name*<br>
+<br>Phone No*<br>
+<br>Address 1*<br><br><br>
+<br>Address 3
+</div>
+</td>
+<td>
+<div class="middleleft">
+<form name="det" method="post" action="">
+:<input type="text" name="depot_name" placeholder="Enter Depot Name" required></input><br>
+<br>:<input type="text" name="trans_name" placeholder="Enter Transporter Name" required></input><br>
+<br>:<input type="text" name="phone_no" placeholder="Enter Phone No." required></input><br>
+<br>:<textarea rows="2" cols="20" name="address1" placeholder="Enter Address" required></textarea>
+<br><br>:<textarea rows="2" cols="20" name="address3" placeholder="Enter Address"></textarea><br>
+</div>
+</td>
+<td>
+<div class="middleright">
+Location Name*<br>
+<br>Mobile No*<br>
+<br>Fax<br>
+<br>Address 2<br><br>
+<br>Login ID<br>
+</div>
+</td>
+<td>
+<div class="right">
+:<input type="text" name="loc_name"  placeholder="Enter Location Name" required></input><br>
+<br>:<input type="text" name="mob_no"  placeholder="Enter Mobile No." required></input><br>
+<br>:<input type="text" name="fax" placeholder="Enter Fax No"></input><br>
+<br>:<textarea rows="2" cols="20" name="address2" placeholder="Enter Address"></textarea><br>
+<br>:<input type="text" name="login_id" placeholder="Enter Login Id"></input>
+</div>
+</td>
+</div>
+</tr>
+<tr>
+<div class="q">
+<td>
+<div class="leftdown">
+<p style="text-align:left; margin-top:-3px;">Location*</p><br>
+<div class="up">
+<input type="checkbox" name="location1" value="dhule" required>Dhule</input>
+</div>
+</div>
+</td>
+<td>
+<div class="rightdown">
+<p style="text-align:left; margin-top:-3px;">Jobs*</p><br>
+<div class="up">
+<input type="checkbox" name="job1" value="transhipment">Transhipment</input><br>
+<input type="checkbox" name="job2" value="depot_dispatch">Depot Dispatch</input><br>
+<input type="checkbox" name="job3" value="material_movement">Material Movement</input><br>
+<input type="checkbox" name="job4" value="pipeline_order">Pipeline Orders</input>
+</div>
+</td>
+</div>
+</div>
+</tr>
+</table>
+</body>
+</html>
